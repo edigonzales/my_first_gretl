@@ -23,3 +23,7 @@ defaultTasks 'validate'
 task validate(type: IliValidator){
     dataFiles = ["ch_254900.itf"]
 }
+
+task validateFail(type: IliValidator){
+    dataFiles = ["ch_254900_error.itf"]
+}
